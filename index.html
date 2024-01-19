@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="p-5 bg-primary">
+      <h1 class="display-5 font-bold text-white">LinkedIn</h1>
+    </header>
+
+    <div class="container">
+      <div class="mx-auto p-5">
+        <input
+          class="form-control form-control-lg mb-2"
+          placeholder="Post Title"
+          id="postTitle"
+        />
+        <input
+          class="form-control form-control-lg mb-2"
+          placeholder="Write your post here"
+          id="postDesc"
+        />
+        <button
+          class="btn btn-primary btn-lg w-100 d-flex align-items-center gap-3 justify-content-center"
+          id="postBtn"
+        >
+          Add
+          <div
+            id="loadingSpinner"
+            class="spinner-border text-light spinner-border-sm d-none"
+            role="status"
+          >
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="d-flex flex-column gap-5 p-5" id="postList"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
